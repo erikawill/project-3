@@ -1,1 +1,158 @@
 /* Place CSS styles here */
+button{
+    background-color: brown
+    border-color: brown;
+    color: black;
+    border-radius: 8px;
+  }
+  button:hover{
+    background-color: white;
+        }
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    white-space: nowrap;
+    -webkit-clip-path: inset(50%);
+    clip-path: inset(50%);
+    border: 0;
+  }
+  
+  body {
+    background-color: lightgray;
+  }
+  
+  img {
+    width: 100%;
+    height: auto;
+  }
+  
+  /* HEADER */
+  .hippocampus-header-wrapper,
+  .hippocampus-main-content-wrapper,
+  .hippocampus-footer-wrapper {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .hippocampus-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 32px;
+  }
+  
+  .hippocampus-logo {
+    width: 130px;
+  }
+  
+  .hippocampus-main-nav {
+    display: flex;
+    gap: 16px;
+  }
+  
+  .hippocampus-main-nav a {
+    text-decoration: none;
+    color: #e08be5;
+    transition: all ease .25s;
+  }
+  
+  .hippocampus-main-nav a:hover {
+    color: black;
+  }
+  
+  .hippocampus-intro {
+      background:
+        linear-gradient(
+          rgba(223, 255, 0, 0.75),
+          rgba(223, 255, 0, 0.75)
+        ),
+        url(../img/heart-water-splash.jpeg);
+      padding-top: 150px;
+      padding-bottom: 150px;
+      background-position: center;
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+    }
+  }
+  
+  .hippocampus-social-link:hover {
+    border: 1px solid black;
+  }
+  
+  .hippocampus-social-links {
+    display: flex;
+    gap: 16px;
+  }
+  
+  .hippocampus-social-link-image {
+    width: 32px;
+  }
+  
+  .hippocampus-team-list {
+    padding-left: 0;
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    grid-gap: 4px;
+  }
+  
+  @media (max-width: 999px) {
+    .hippocampus-team-list {
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    }
+  }
+  
+  .hippocampus-team-list a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    filter: grayscale(.5);
+    text-decoration: none;
+  }
+  
+  .hippocampus-team-list a:hover {
+    filter: grayscale(0);
+  }
+  
+  .hippocampus-team-list p {
+    font-size: 20px;
+  }
+  
+  .hippocampus-contact-form {
+    border: 1px solid black;
+    padding: 20px;
+    border-radius: 20px;
+    background: white;
+  }
+  
+  .hippocampus-feature-content {
+    display: flex;
+    gap: 40px;
+  }
+  
+  .hippocampus-feature-image {
+    max-width: 250px;
+  }
+  
+  .hippocampus-feature-images {
+    display: flex;
+    gap: 12px;
+  }
+  
+  .hippocampus-footer-wrapper {
+    padding-top: 32px;
+    border-top: 1px solid black;
+    margin-top: 32px;
+  }
+  
+  .hippocampus-footer {
+    display: flex;
+    justify-content: space-between;
+  }
