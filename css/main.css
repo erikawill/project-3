@@ -1,11 +1,18 @@
 /* Place CSS styles here */
-button{
-    background-color: brown
-    border-color: brown;
-    color: black;
-    border-radius: 8px;
-  }
-  button:hover{
+.button {
+  background-color: rgb(49, 35, 8);
+  border: none;
+  border-radius: 12px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-family: 'Quicksand', sans-serif;
+}
+
+  .sbutton:hover{
     background-color: white;
         }
 
@@ -23,7 +30,7 @@ button{
   }
   
   body {
-    background-color: lightgray;
+    background-color: rgb(201, 174, 136);
   }
   
   img {
@@ -57,9 +64,8 @@ button{
   }
   
   .hippocampus-main-nav a {
-    text-decoration: none;
-    color: #e08be5;
-    transition: all ease .25s;
+
+
   }
   
   .hippocampus-main-nav a:hover {
@@ -67,18 +73,17 @@ button{
   }
   
   .hippocampus-intro {
+    font-family: 'Syncopate', sans-serif;
       background:
-        linear-gradient(
-          rgba(223, 255, 0, 0.75),
-          rgba(223, 255, 0, 0.75)
-        ),
-        url(../img/heart-water-splash.jpeg);
+        
+        //url(../img/heart-water-splash.jpeg);
       padding-top: 150px;
       padding-bottom: 150px;
       background-position: center;
       background-size: cover;
       display: flex;
-      justify-content: center;
+      justify-content: flex-start;
+      flex-direction: row;
     }
   }
   
@@ -115,8 +120,10 @@ button{
     align-items: center;
     filter: grayscale(.5);
     text-decoration: none;
+    
   }
-  
+
+
   .hippocampus-team-list a:hover {
     filter: grayscale(0);
   }
@@ -156,3 +163,61 @@ button{
     display: flex;
     justify-content: space-between;
   }
+
+  @import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+html, body{
+  height: 100%;
+  font-weight: 800;
+}
+
+body{
+  background: rgb(201, 174, 136);
+  font-family: Arial;
+}
+
+svg {
+    display: block;
+    font: 10.5em 'Montserrat';
+    width: 960px;
+    height: 300px;
+    margin: 0 auto;
+}
+
+.text-copy {
+    fill: none;
+    stroke: white;
+    stroke-dasharray: 6% 29%;
+    stroke-width: 5px;
+    stroke-dashoffset: 0%;
+    animation: stroke-offset 5.5s infinite linear;
+}
+
+.text-copy:nth-child(1){
+  stroke: #4D163D;
+  animation-delay: -1;
+}
+
+.text-copy:nth-child(2){
+  stroke: #840037;
+  animation-delay: -2s;
+}
+
+.text-copy:nth-child(3){
+  stroke: #BD0034;
+  animation-delay: -3s;
+}
+
+.text-copy:nth-child(4){
+  stroke: #BD0034;
+  animation-delay: -4s;
+}
+
+.text-copy:nth-child(5){
+  stroke: #FDB731;
+  animation-delay: -5s;
+}
+
+@keyframes stroke-offset{
+  100% {stroke-dashoffset: -35%;}
+}

@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Responsive Layouts</title>
+  <title>Home</title>
   <meta name="description" content="This site will serve as the hub for many sub responsive layouts">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -24,20 +24,39 @@
 
 <body>
   <!-- Place your site's HTML here -->
+
   <p>This text will display on your site!</p>
+  
   <div class="hippocampus-header-wrapper">
     <header class="hippocampus-header">
       <img class="hippocampus-logo" src="./img/logo.webp" alt="" />
       <nav class="hippocampus-main-nav">
-        <a href="./index.html">Home</a>
-        <a href="./about.html">About</a>
-        <a href="./team.html">Team</a>
-        <a href="./contact.html">Contact</a>
+        <a class="button" href="./index.html">Home</a>
+        <a class="button" href="./team.html">Gallery</a>
+        <a class="button" href="./contact.html">Contact</a>
+        <a class="button" href="./about.html">About</a>
       </nav>
     </header>
   </div>
+
+  <svg viewBox="0 0 960 300">
+    <symbol id="s-text">
+      <text text-anchor="middle" x="50%" y="80%">ERIKA. </text>
+      <text text-anchor="middle" x="52%" y="80%">ERIKA. </text>
+      
+    </symbol>
+  
+    <g class = "g-ants">
+      <use xlink:href="#s-text" class="text-copy"></use>
+      <use xlink:href="#s-text" class="text-copy"></use>
+      <use xlink:href="#s-text" class="text-copy"></use>
+      <use xlink:href="#s-text" class="text-copy"></use>
+      <use xlink:href="#s-text" class="text-copy"></use>
+    </g>
+  </svg>
+
   <div class="hippocampus-intro">
-    <h1>Art 3020</h1>
+    <h1>Erika Williams</h1>
   </div>
   <main class="hippocampus-main-content">
     <h1>Home</h1>
