@@ -34,10 +34,10 @@
   }
   
   img {
-    width: 100%;
+    width: 256px;
     height: auto;
   }
-  
+ 
   /* HEADER */
   .hippocampus-header-wrapper,
   .hippocampus-main-content-wrapper,
@@ -64,8 +64,8 @@
   }
   
   .hippocampus-main-nav a {
-
-
+    text-decoration: none;
+    transition: all ease .25s;
   }
   
   .hippocampus-main-nav a:hover {
@@ -74,9 +74,6 @@
   
   .hippocampus-intro {
     font-family: 'Syncopate', sans-serif;
-      background:
-        
-        //url(../img/heart-water-splash.jpeg);
       padding-top: 150px;
       padding-bottom: 150px;
       background-position: center;
@@ -84,8 +81,9 @@
       display: flex;
       justify-content: flex-start;
       flex-direction: row;
+      align-items: flex-end;
     }
-  }
+
   
   .hippocampus-social-link:hover {
     border: 1px solid black;
@@ -407,61 +405,7 @@ textarea {
 }
 
 
-/* Social Media Icons */
-.social-media-list {
-  position: relative;
-  font-size: 22px;
-  text-align: center;
-  width: 100%;
-  margin: 0 auto;
-  padding: 0;
-}
 
-.social-media-list li a {
-  color: #fff;
-}
-
-.social-media-list li {
-  position: relative; 
-  display: inline-block;
-  height: 60px;
-  width: 60px;
-  margin: 10px 3px;
-  line-height: 60px;
-  border-radius: 50%;
-  color: #fff;
-  background-color: rgb(27,27,27);
-  cursor: pointer; 
-  transition: all .2s ease-in-out;
-}
-
-.social-media-list li:after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 60px;
-  height: 60px;
-  line-height: 60px;
-  border-radius: 50%;
-  opacity: 0;
-  box-shadow: 0 0 0 1px #fff;
-  transition: all .2s ease-in-out;
-}
-
-.social-media-list li:hover {
-  background-color: #fff; 
-}
-
-.social-media-list li:hover:after {
-  opacity: 1;  
-  transform: scale(1.12);
-  transition-timing-function: cubic-bezier(0.37,0.74,0.15,1.65);
-}
-
-.social-media-list li:hover a {
-  color: #000;
-}
 
 .copyright {
   font: 200 14px 'Oswald', sans-serif;
